@@ -31,3 +31,23 @@ function startMeter() {
 function showMsg(num) {
   document.getElementById("msg" + num).classList.remove("hidden");
 }
+
+function loadServerMessage() {
+  const msgEl = document.getElementById('server-msg');
+  msgEl.innerText = 'Loading...';
+  msgEl.classList.remove('hidden');
+
+  fetch('message.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('HTTP error ' + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      msgEl.innerText = data.message;
+    })
+    .catch(error => {
+      msgEl.innerText = 'Could not load message. ' + error.message;
+    });
+}
