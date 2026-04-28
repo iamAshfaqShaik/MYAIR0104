@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Someone Special 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💗</span>
+  <span>💘</span>
+</div>
+
+<div class="container">
+  <div class="birthday-banner">
+    <div class="pigeon">🕊️</div>
+    <h1>HAPPY BIRTHDAY QUMAIR <span class="heart">🤍</span></h1>
+  </div>
+
+  <div class="side-images left-side">
+    <img class="side-photo" src="images/Screenshot (466).png" alt="Photo 1">
+<img class="side-photo" src="images/Screenshot (467).png" alt="Photo 2">
+  </div>
+  <div class="side-images right-side">
+    <img class="side-photo" src="images/Screenshot (468).png" alt="Photo 3">
+<img class="side-photo" src="images/Screenshot (469).png" alt="Photo 4">
+  </div>
+  
+  <!-- Step 1 -->
+  <div id="step1" class="card">
+    <h2>A little note for you 💌</h2>
+    <div class="envelope" onclick="openLetter()">📩</div>
+    <p>Tap to open</p>
+  </div>
+
+  <!-- Step 2 -->
+  <div id="step2" class="card hidden">
+    <h2>Happy Birthday 💙</h2>
+
+ <p>We’ve shared a lot of time, a lot of space,
+and somewhere in all of that…
+you became important to me.
+
+I don’t always express things,
+but your presence in my life
+has meant more than I’ve ever said.
+    </p>
+    <button onclick="nextStep()">open</button>
+  </div>
+
+  <!-- Step 3 -->
+  <div id="step3" class="card hidden">
+    <h2>Hey… BIRTHDAY BOY 😊😊</h2>
+    <p>I made something for you… hope you like it 😄</p>
+    <button onclick="startMeter()">Calculating how special you are… ✨ 😍</button>
+  </div>
+
+  <!-- Step 4 -->
+  <div id="step4" class="card hidden">
+    <h3>Just wait a second… 💙</h3>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <h2 id="percent">0%</h2>
+  </div>
+
+  <!-- Step 5 -->
+  <div id="step5" class="card hidden">
+    <h2>Tap to reveal 💖</h2>
+    <button onclick="showMsg(1)">😤</button>
+    <button onclick="showMsg(2)">💙</button>
+    <button onclick="showMsg(3)">❤️</button>
+
+    <p id="msg1" class="hidden">By the way… you broke my trust once 😒  
+I told you something important and you leaked it 😤  
+Don’t worry… I’ll scold you properly when I see you 😂</p>
+    <p id="msg2" class="hidden">I gave you a version of me
+that doesn't exist for anyone else.
+And I don't even know why I chose
+to do it with you. I treated you
+like I've never treated anyone,
+like you were different from the
+rest of the world.
+And maybe you really were
+or maybe it was just me
+needing to believe it.
+Because sometimes
+it's not the person who's special,
+it's the way we choose to see them.
+
+I’m not asking to be your priority
+all the time...
+
+I just hope you remember
+
+there’s someone waiting for
+a small message from you.
+
+Not because
+I want to know everything,
+not because
+I need constant attention...
+
+but because I want to feel
+that I matter in your life too. ❤️
+
+Others may have mentioned you
+in their Story but
+I have mentioned you in my Prayers
+
+I  HAVE PLANNED A SURPRISE BUT  IT WAS ORDER DELAY..AND I WAS NOT THERE TOO SO I  COULD  NOT  DO ANYTHING About  it  I HOPE U LIKE IT 
+
+</p>
+    <p id="msg3" class="hidden birthday-message">
+      Happy Birthday, QUMAIR! 🎂🕯️🕯️🕯️
+      <span class="cake">✨</span>
+
+      Anyway, let’s leave all that aside 🙂  
+Today is your day—just enjoy it.  
+Happy Birthday 🎂💙  
+Wishing you success, happiness, and everything you truly need in life.
+    </p>
+    <div class="cracker-animation">
+      <span class="cracker">🎉</span>
+      <span class="cracker">🎊</span>
+      <span class="cracker">🎉</span>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
